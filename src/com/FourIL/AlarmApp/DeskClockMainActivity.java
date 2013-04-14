@@ -23,6 +23,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CursorAdapter;
 import android.widget.ImageButton;
@@ -49,7 +50,7 @@ public class DeskClockMainActivity extends Activity implements OnItemClickListen
         
         //取自定义布局的LayoutInflater
         mFactory = LayoutInflater.from(this);
-        //取getSharedPreferences中key==“AlarmClock”的倄1�7
+        //取getSharedPreferences中key==“AlarmClock”的倄1�7
         mPrefs = getSharedPreferences(PREFERENCES, 0);
         //获取闹钟的cursor
         mCursor = Alarms.getAlarmsCursor(getContentResolver());
@@ -89,6 +90,16 @@ public class DeskClockMainActivity extends Activity implements OnItemClickListen
                     
                 }
         });
+        
+        Button submit = 
+        		(Button) findViewById(R.id.submitinfo);
+        submit.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+            	Intent intent = new Intent(DeskClockMainActivity.this, SubmitInfoActivity.class);
+            	intent.addFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+            	startActivity(intent);
+            }
+        });
     }
     
     private void addNewAlarm() {
@@ -96,7 +107,7 @@ public class DeskClockMainActivity extends Activity implements OnItemClickListen
     }
     
     /**
-     * listview的�1�7�配器继承CursorAdapter
+     * listview的�1�7�配器继承CursorAdapter
      * @author FourInLove
      * 也可以使用BaseAdapter
      */
@@ -114,7 +125,7 @@ public class DeskClockMainActivity extends Activity implements OnItemClickListen
             return ret;
         }
 
-        //把view绑定cursor的每丄1�7顄1�7
+        //把view绑定cursor的每丄1�7顄1�7
         public void bindView(View view, Context context, Cursor cursor) {
             final Alarm alarm = new Alarm(cursor);
 
@@ -132,7 +143,7 @@ public class DeskClockMainActivity extends Activity implements OnItemClickListen
             clockOnOff.setChecked(alarm.enabled);
 
             // Clicking outside the "checkbox" should also change the state.
-            //对checkbox设置监听，使里外丄1�7臄1�7
+            //对checkbox设置监听，使里外丄1�7臄1�7
             indicator.setOnClickListener(new OnClickListener() {
                     public void onClick(View v) {
                         clockOnOff.toggle();
@@ -190,7 +201,7 @@ public class DeskClockMainActivity extends Activity implements OnItemClickListen
     /*
      * (non-Javadoc)
      * @see android.app.Activity#onContextItemSelected(android.view.MenuItem)
-     * 创建上下文菜卄1�7
+     * 创建上下文菜卄1�7
      */
     @Override
     public boolean onContextItemSelected(final MenuItem item) {
@@ -316,7 +327,7 @@ public class DeskClockMainActivity extends Activity implements OnItemClickListen
     /*
      * (non-Javadoc)
      * @see android.widget.AdapterView.OnItemClickListener#onItemClick(android.widget.AdapterView, android.view.View, int, long)
-     * 创建菜单的点击事件响庄1�7
+     * 创建菜单的点击事件响庄1�7
      */
 	public void onItemClick(AdapterView<?> adapterView, View v, int pos, long id) {
 		Intent intent = new Intent(this, SetAlarm.class);

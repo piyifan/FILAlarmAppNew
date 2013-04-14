@@ -53,7 +53,11 @@
         android:scaleType="fitXY"
         android:gravity="fill_horizontal"
         android:src="@android:drawable/divider_horizontal_dark" />
-
+    <Button
+        android:id="@+id/submitinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Info" />
     <ListView
         android:id="@+id/alarms_list"
         android:layout_width="match_parent"

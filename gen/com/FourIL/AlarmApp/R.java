@@ -61,40 +61,42 @@ public final class R {
         public static final int stat_notify_alarm=0x7f02002a;
     }
     public static final class id {
-        public static final int Download=0x7f0a0019;
-        public static final int SetAlarm=0x7f0a0018;
+        public static final int Download=0x7f0a001a;
+        public static final int SetAlarm=0x7f0a0019;
         public static final int add_alarm=0x7f0a0006;
-        public static final int alarm_delete=0x7f0a0017;
-        public static final int alarm_revert=0x7f0a0016;
-        public static final int alarm_save=0x7f0a0015;
-        public static final int alarms_list=0x7f0a0007;
+        public static final int alarm_delete=0x7f0a0018;
+        public static final int alarm_revert=0x7f0a0017;
+        public static final int alarm_save=0x7f0a0016;
+        public static final int alarms_list=0x7f0a0008;
         public static final int alertTitle=0x7f0a0000;
         public static final int am_pm=0x7f0a0002;
-        public static final int bar_onoff=0x7f0a000b;
+        public static final int bar_onoff=0x7f0a000c;
         public static final int base_layout=0x7f0a0005;
-        public static final int clock_onoff=0x7f0a000a;
-        public static final int daysOfWeek=0x7f0a000e;
-        public static final int delete_alarm=0x7f0a001f;
-        public static final int desk_clock_button=0x7f0a0008;
-        public static final int digitalClock=0x7f0a000c;
+        public static final int clock_onoff=0x7f0a000b;
+        public static final int daysOfWeek=0x7f0a000f;
+        public static final int delete_alarm=0x7f0a0021;
+        public static final int desk_clock_button=0x7f0a0009;
+        public static final int digitalClock=0x7f0a000d;
         public static final int dismiss=0x7f0a0004;
-        public static final int edit_alarm=0x7f0a001e;
-        public static final int enable_alarm=0x7f0a001d;
-        public static final int header_label=0x7f0a0010;
-        public static final int header_time=0x7f0a000f;
-        public static final int imgview=0x7f0a0013;
-        public static final int indicator=0x7f0a0009;
-        public static final int infoBtn=0x7f0a0011;
-        public static final int label=0x7f0a000d;
-        public static final int labelview=0x7f0a0012;
-        public static final int menu_item_add_alarm=0x7f0a001b;
-        public static final int menu_item_alarms=0x7f0a0020;
-        public static final int menu_item_desk_clock=0x7f0a001a;
-        public static final int menu_item_settings=0x7f0a001c;
-        public static final int menu_settings=0x7f0a0021;
+        public static final int edit_alarm=0x7f0a0020;
+        public static final int enable_alarm=0x7f0a001f;
+        public static final int header_label=0x7f0a0011;
+        public static final int header_time=0x7f0a0010;
+        public static final int imgview=0x7f0a0014;
+        public static final int indicator=0x7f0a000a;
+        public static final int infoBtn=0x7f0a0012;
+        public static final int label=0x7f0a000e;
+        public static final int labelview=0x7f0a0013;
+        public static final int menu_item_add_alarm=0x7f0a001d;
+        public static final int menu_item_alarms=0x7f0a0022;
+        public static final int menu_item_desk_clock=0x7f0a001c;
+        public static final int menu_item_settings=0x7f0a001e;
+        public static final int menu_settings=0x7f0a0023;
         public static final int snooze=0x7f0a0003;
-        public static final int textview=0x7f0a0014;
+        public static final int submitinfo=0x7f0a0007;
+        public static final int textview=0x7f0a0015;
         public static final int timeDisplay=0x7f0a0001;
+        public static final int wv_oauth=0x7f0a001b;
     }
     public static final class layout {
         public static final int alarm_alert=0x7f030000;
@@ -105,6 +107,7 @@ public final class R {
         public static final int main=0x7f030005;
         public static final int set_alarm=0x7f030006;
         public static final int start_main=0x7f030007;
+        public static final int submit_info=0x7f030008;
     }
     public static final class menu {
         public static final int alarm_list_menu=0x7f090000;
